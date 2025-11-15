@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="w-screen h-screen flex justify-center items-center bg-red-200">
+      <form
+        action=""
+        class="w-[400px] h-[500px] bg-red-400 rounded-2xl p-4 shadow-2xl space-y-4"
+      >
+        <!-- UserName -->
+        <div class="flex flex-col space-y-1">
+          <label for="username" class="text-lg font-medium text-gray-700"
+            >Username</label
+          >
+          <input
+            type="text"
+            name=""
+            id="username"
+            placeholder="Enter Your Name"
+            class="bg-white w-full rounded-md p-2"
+          />
+        </div>
+        <div class="flex flex-col space-y-1">
+          <label for="password" class="text-lg font-medium text-gray-700"
+            >Password</label
+          >
+          <input
+            type="password"
+            name=""
+            id="username"
+            placeholder="Enter Password"
+            class="bg-white w-full rounded-md p-2"
+          />
+        </div>
+        <button
+          type="submit"
+          class="bg-gray-300 px-2 py-2 w-3/4 text-lg font-medium text-gray-800 mx-auto block rounded-md"
+        >
+          Login
+        </button>
+        <div id="form-footer">
+          <p>Forget your password?</p>
+          <p>Register</p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

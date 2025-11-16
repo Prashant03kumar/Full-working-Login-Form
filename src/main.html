@@ -4,49 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <title>Login Page</title>
   </head>
   <body>
     <div class="w-screen h-screen flex justify-center items-center bg-red-200">
       <form
+        id="authForm"
         action=""
-        class="w-[400px] h-[500px] bg-red-400 rounded-2xl p-4 shadow-2xl space-y-4"
+        class="w-[400px] h-[440px] bg-red-400 rounded-2xl p-4 shadow-2xl space-y-4"
       >
         <!-- UserName -->
-        <div class="flex flex-col space-y-1">
-          <label for="username" class="text-lg font-medium text-gray-700"
+        <div class="flex flex-col space-y-1 mt-6">
+          <label
+            for="username"
+            id="usernameLabel"
+            class="text-lg font-medium text-gray-700"
             >Username</label
           >
           <input
             type="text"
             name=""
-            id="username"
+            id="usernameInput"
             placeholder="Enter Your Name"
             class="bg-white w-full rounded-md p-2"
           />
         </div>
         <div class="flex flex-col space-y-1">
-          <label for="password" class="text-lg font-medium text-gray-700"
+          <label
+            for="password"
+            id="passwordLabel"
+            class="text-lg font-medium text-gray-700"
             >Password</label
           >
           <input
             type="password"
             name=""
-            id="username"
+            id="passwordInput"
             placeholder="Enter Password"
             class="bg-white w-full rounded-md p-2"
           />
         </div>
         <button
+          id="submitButton"
           type="submit"
-          class="bg-gray-300 px-2 py-2 w-3/4 text-lg font-medium text-gray-800 mx-auto block rounded-md"
+          class="bg-gray-300 px-2 py-2 w-3/4 text-lg font-medium text-gray-800 mx-auto block rounded-md cursor-pointer my-10 border-2 border-transparent hover:border-gray-500"
         >
           Login
         </button>
-        <div id="form-footer">
-          <p>Forget your password?</p>
-          <p>Register</p>
+        <hr class="text-xl text-gray-600 mb-4" />
+        <div id="formfooter" class="flex justify-center mx-auto space-x-1">
+          <span id="forgotPassword" class="cursor-pointer"
+            >Forgot Password?</span
+          >
+          <span
+            id="toggleText"
+            class="text-blue-600 underline cursor-pointer ml-2"
+          >
+            Register
+          </span>
         </div>
       </form>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
